@@ -8,4 +8,5 @@ USE db_comercio;
 CREATE TABLE tb_categoria (
     id INT(11) PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(50) NOT NULL,
-)
+    descricao VARCHAR(100)
+);
