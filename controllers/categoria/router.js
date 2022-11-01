@@ -1,9 +1,9 @@
 const controller = require('./categoriaController');
 const router = require('express').Router();
 
-router.get('/categorias', (req, res) => {
+router.get('/categorias', async (req, res) => {
     res.send(
-        controller.listar()
+        await controller.listar()
     )
 })
 
